@@ -21,6 +21,6 @@ app.use('/uploads',express.static('uploads'));
 app.listen(PORT,()=>{
     console.log(`Server Started and running ar ${PORT}`);
 })
-app.use('/home',(req,res)=>{
+app.use('/',(req,res)=>{
    res.send("<h1>Welcome ");  
 })
